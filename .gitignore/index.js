@@ -647,20 +647,20 @@ bot.on("message", function(message) {
     }
 
 });
-//bot.on('guildMemberAdd', member => {
-   // member.guild.channels.get('439548357304778754').send({embed: {
-        //color: 0x800080,
-        //author: {
-            //name: "REAK Bot",
-            //icon_url: bot.user.avatarURL
-       // },
-        //description: "Bienvenue à toi **" + member + "**, prends place dans l'équipe parmis les **" + member.guild.memberCount + "** membres ! :shark: :v:",
-        //timestamp: new Date(),
-        //footer: {
-       // icon_url: member.user.avatarURL,
-        //text: "© REAK 2019 - 2020"
-        //}
-        //}});
-   //});
+bot.on('guildMemberAdd', member => {
+    member.guild.channels.get('439548357304778754').send({embed: {
+        color: 0x800080,
+        author: {
+            name: "REAK Bot",
+            icon_url: bot.user.avatarURL
+        },
+        description: "Bienvenue à toi **" + member + "**, prends place dans l'équipe parmis les **" + member.guild.memberCount + "** membres ! :shark: :v:",
+        timestamp: new Date(),
+        footer: {
+        icon_url: member.user.avatarURL,
+        text: "© REAK 2019 - 2020"
+        }
+        }});
+   });
 
 bot.login(process.env.TOKEN)
