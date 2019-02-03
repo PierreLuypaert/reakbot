@@ -652,12 +652,12 @@ bot.on('guildMemberAdd', member => {
         color: 0x800080,
         author: {
             name: "REAK Bot",
-            icon_url: bot.user.avatarURL
+            icon_url: member.user.avatarURL
         },
-        description: "Bienvenue à toi **" + member + "**, prends place dans l'équipe parmis les **" + member.guild.memberCount + "** membres ! :shark: :v:",
+        description: "Bienvenue à toi **" + member.ping + "**, prends place dans l'équipe parmis les **" + member.guild.memberCount + "** membres ! :shark: :v:",
         timestamp: new Date(),
         footer: {
-        icon_url: member.user.avatarURL,
+        icon_url: bot.user.avatarURL,
         text: "© REAK 2019 - 2020"
         }
         }});
