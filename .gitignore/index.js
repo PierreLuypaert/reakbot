@@ -663,4 +663,4 @@ bot.on("message", function(message) {
         //}});
    //});
 
-bot.login("NTI5MDA1NTg0NDE0OTMyOTky.Dwr58w.T1XoCd5RYkPPlwdyy3TIUqw1UVs")
+bot.login(process.env.TOKEN)
