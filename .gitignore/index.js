@@ -654,7 +654,7 @@ bot.on('guildMemberAdd', member => {
             name: "REAK Bot",
             icon_url: member.user.avatarURL
         },
-        description: "Bienvenue à toi **" + member.ping + "**, prends place dans l'équipe parmis les **" + member.guild.memberCount + "** membres ! :shark: :v:",
+        description: "Bienvenue à toi **" + member.mention + "**, prends place dans l'équipe parmis les **" + member.guild.memberCount + "** membres ! :shark: :v:",
         timestamp: new Date(),
         footer: {
         icon_url: bot.user.avatarURL,
