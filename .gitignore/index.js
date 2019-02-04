@@ -680,4 +680,4 @@ bot.on('guildMemberAdd', member => {
         }});
    });
 
-bot.login(process.env.TOKEN)
+bot.login("529005584414932992")
