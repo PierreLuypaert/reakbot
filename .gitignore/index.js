@@ -146,21 +146,22 @@ bot.on("message", function(message) {
         resua=getRandomInt(9);
         listemap=["Retail Row","Pleasant Park","Tilted Towers","Frosty Flights","Happy Hamlet","Lucky Landing","Salty Springs","Paradise Palms","Lazy Links"];
         resu=listemap[resua]
-        message.channel.send({embed: {
-            color: 0x800080,
-            author: {
-                name: "REAK Bot",
-                icon_url: message.author.avatarURL
-              },
-            description: `Votre prochain spawn sera à **${resu}** :evergreen_tree: ! `,
-            image: "https://i.imgur.com/d8ynso8.png",
-            timestamp: new Date(),
-            footer: {
-                icon_url: bot.user.avatarURL,
-                text: "© REAK 2019 - 2020"
-            }
-          }});
-        }
+        const embed = new Discord.RichEmbed()
+  .setTitle("This is your title, it can hold 256 characters")
+  .setAuthor("Author Name", "https://i.imgur.com/lm8s41J.png")
+  /*
+   * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
+   */
+  .setColor(0x800080)
+  .setDescription(`Votre prochain spawn sera à... ${resu} :evergreen_tree:`)
+  .setFooter("Bon spawn !")
+  .setImage("https://i.imgur.com/d8ynso8.png")
+
+  /*
+   * Takes a Date object, defaults to current date.
+   */
+  .setTimestamp()
+  message.channel.send({embed});
     
     
     if(message.content.startsWith ("!valider ")) {
