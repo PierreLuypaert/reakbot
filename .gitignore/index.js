@@ -143,8 +143,8 @@ bot.on("message", function(message) {
         function getRandomInt(max) {
             return Math.floor(Math.random() * Math.floor(max));
           }
-        resua=getRandomInt(9);
-        listemap=["Retail Row","Pleasant Park","Tilted Towers","Frosty Flights","Happy Hamlet","Lucky Landing","Salty Springs","Paradise Palms","Lazy Links"];
+        resua=getRandomInt(20);
+        listemap=["Retail Row","Pleasant Park","Tilted Towers","Frosty Flights","Happy Hamlet","Lucky Landing","Salty Springs","Paradise Palms","Lazy Links","Junk Junction","Snobby Shores","Haunted Hills","Polar Peak","Shifty Shafts","Fatal Fields","Wailing Woods","Lonely Lodge","Dusty Divot","Tomato Temple","Loot Lake"];
         resu=listemap[resua]
         const embed = new Discord.RichEmbed()
             .setAuthor("REAK BOT", "https://i.imgur.com/mfvoPjv.png")
