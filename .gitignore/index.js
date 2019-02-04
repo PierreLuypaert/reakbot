@@ -153,6 +153,7 @@ bot.on("message", function(message) {
                 icon_url: message.author.avatarURL
               },
             description: `Votre prochain spawn sera à **${resu}** :evergreen_tree: ! `,
+            image: "https://i.imgur.com/d8ynso8.png",
             timestamp: new Date(),
             footer: {
                 icon_url: bot.user.avatarURL,
