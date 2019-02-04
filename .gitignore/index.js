@@ -147,8 +147,7 @@ bot.on("message", function(message) {
         listemap=["Retail Row","Pleasant Park","Tilted Towers","Frosty Flights","Happy Hamlet","Lucky Landing","Salty Springs","Paradise Palms","Lazy Links"];
         resu=listemap[resua]
         const embed = new Discord.RichEmbed()
-            .setTitle("This is your title, it can hold 256 characters")
-            .setAuthor("Author Name", "https://i.imgur.com/lm8s41J.png")
+            .setAuthor("REAK BOT", "https://i.imgur.com/mfvoPjv.png")
             .setColor(0x800080)
             .setDescription(`Votre prochain spawn sera à... ${resu} :evergreen_tree:`)
             .setFooter("Bon spawn !")
