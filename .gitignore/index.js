@@ -3,25 +3,83 @@ const Discord = require("discord.js");
 var bot = new Discord.Client();
 var couleur = 1
 bot.on('ready', () => {
-    //bot.user.setActivity('Par Sneawy')
-    //console.log("Je suis prêt!");
-    //bot.channels.get("528998224380559402").send({embed: {
-     //   color: 0x800080,
-     //   author: {
-      //      name: "REAK Bot",
-      //      icon_url: bot.user.avatarURL
-      //    },
-      //  description: "**Robot connecté en Javascript!**",
-      //  timestamp: new Date(),
+    bot.user.setActivity('Par Sneawy')
+    console.log("Je suis prêt!");
+   // bot.channels.get("528998224380559402").send({embed: {
+   //     color: 0x800080,
+    //    author: {
+    //        name: "REAK Bot",
+     //       icon_url: bot.user.avatarURL
+     //     },
+     //   description: "**Robot connecté en Javascript!**",
+     //   timestamp: new Date(),
       //  footer: {
-      //  icon_url: bot.user.avatarURL,
+     //   icon_url: bot.user.avatarURL,
       //  text: "© - REAK BOT"
-      //  }
+     //   }
      // }});
 
 
 });
 bot.on("message", function(message) {
+    if(message.content.startsWith ("!sondage ")) {
+        sond=message.content
+        i=0
+        sondage=""
+        a=9
+        do{
+            sondage=sondage+sond[a]
+            a=a+1
+            console.log(sondage)
+            if ((sond.length)==a) {
+                i=1
+                console.log("on passe")
+            }
+        } while (i==0);
+        message.channel.send(sondage)
+        lauch = new Date ();
+        go=setDate();
+        Date.prototype.addHours = function addhour() {    
+            lauch.setTime(lauch.getTime() + (24*60*60*1000)); 
+            return lauch;   
+         }
+         
+         message.channel.send("Il reste 10 heures.")
+            
+            
+        
+        function setDate(){
+            var now = new Date();
+            dayafter=lauch
+            var restant= (now.getTime() - dayafter.getTime())/1000;
+            console.log(restant)
+            if (restant>(10) && restant<11) {
+                console.log("YES 59 MINS");
+                bot.user.lastMessage.edit("Il reste 9 heures.") }
+
+            if (restant>(11) && restant<12) {
+                console.log("YES 58 MINS");
+                bot.user.lastMessage.edit("Il reste 8 heures.") }
+2
+                if (restant>(12) && restant<13) {
+                    console.log("YES 58 MINS");
+                    bot.user.lastMessage.edit("Il reste 7 heures.") }
+
+
+                    if (restant>(13) && restant<14) {
+                        console.log("YES 58 MINS");
+                        bot.user.lastMessage.edit("Il reste 6 heures.") }
+
+                        if (restant>(14) && restant<15) {
+                            console.log("YES 58 MINS");
+                            bot.user.lastMessage.edit("Il reste 5 heures.") }
+            
+
+
+            
+            setTimeout(setDate, 1000)
+    }}
+
     if(message.content.startsWith ("INSCRIPTION DE L'EQUIPE :")) {
         inscription=message.content
         condition=0
@@ -680,4 +738,4 @@ bot.on('guildMemberAdd', member => {
         }});
    });
 
-bot.login(process.env.TOKEN)
+bot.login("NTI5MDA1NTg0NDE0OTMyOTky.DzpCKw.KOJLTKH48dX1XmDtAYUWkLVWY1o")
