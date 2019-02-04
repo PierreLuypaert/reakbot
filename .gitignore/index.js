@@ -139,7 +139,30 @@ bot.on("message", function(message) {
             }
           }});
         }
-
+    if(message.content.startsWith ("!spawn")) {
+        function getRandomInt(max) {
+            return Math.floor(Math.random() * Math.floor(max));
+          }
+        resua=getRandomInt(9);
+        resua=resua+1
+        listemap=["Retail Row","Pleasant Park","Tilted Towers","Frosty Flights","Happy Hamlet","Lucky Landing","Salty Springs","Paradise Palms","Lazy Links"];
+        resu=listemap[resua]
+        message.channel.send({embed: {
+            color: 0x800080,
+            author: {
+                name: "REAK Bot",
+                icon_url: message.author.avatarURL
+              },
+            description: `:game_die: Votre prochain spawn sera à **${resu}** :evergreen_tree: ! `,
+            timestamp: new Date(),
+            footer: {
+                icon_url: bot.user.avatarURL,
+                text: "© REAK 2019 - 2020"
+            }
+          }});
+        }
+    
+    
     if(message.content.startsWith ("!valider ")) {
         message.delete(500)
         nbequipe=0
