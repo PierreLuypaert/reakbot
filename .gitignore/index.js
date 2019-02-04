@@ -149,7 +149,7 @@ bot.on("message", function(message) {
         const embed = new Discord.RichEmbed()
             .setAuthor("REAK BOT", "https://i.imgur.com/mfvoPjv.png")
             .setColor(0x800080)
-            .setDescription(`Votre prochain spawn sera à... ${resu} :evergreen_tree:`)
+            .setDescription(`Votre prochain spawn sera à... **${resu}** :evergreen_tree:`)
             .setFooter("Bon spawn !")
             .setImage("https://i.imgur.com/d8ynso8.png")
             .setTimestamp()
