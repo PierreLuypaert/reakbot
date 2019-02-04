@@ -144,7 +144,6 @@ bot.on("message", function(message) {
             return Math.floor(Math.random() * Math.floor(max));
           }
         resua=getRandomInt(9);
-        resua=resua+1
         listemap=["Retail Row","Pleasant Park","Tilted Towers","Frosty Flights","Happy Hamlet","Lucky Landing","Salty Springs","Paradise Palms","Lazy Links"];
         resu=listemap[resua]
         message.channel.send({embed: {
@@ -153,7 +152,7 @@ bot.on("message", function(message) {
                 name: "REAK Bot",
                 icon_url: message.author.avatarURL
               },
-            description: `:game_die: Votre prochain spawn sera à **${resu}** :evergreen_tree: ! `,
+            description: `Votre prochain spawn sera à **${resu}** :evergreen_tree: ! `,
             timestamp: new Date(),
             footer: {
                 icon_url: bot.user.avatarURL,
