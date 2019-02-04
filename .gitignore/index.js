@@ -3,21 +3,21 @@ const Discord = require("discord.js");
 var bot = new Discord.Client();
 var couleur = 1
 bot.on('ready', () => {
-    bot.user.setGame('Par Sneawy')
+    bot.user.setActivity('Par Sneawy')
     console.log("Je suis prêt!");
-    bot.channels.get("528998224380559402").send({embed: {
-        color: 0x800080,
-        author: {
-            name: "REAK Bot",
-            icon_url: bot.user.avatarURL
-          },
-        description: "**Robot connecté en Javascript!**",
-        timestamp: new Date(),
-        footer: {
-        icon_url: bot.user.avatarURL,
-        text: "© - REAK BOT"
-        }
-      }});
+    //bot.channels.get("528998224380559402").send({embed: {
+     //   color: 0x800080,
+     //   author: {
+      //      name: "REAK Bot",
+      //      icon_url: bot.user.avatarURL
+      //    },
+      //  description: "**Robot connecté en Javascript!**",
+      //  timestamp: new Date(),
+      //  footer: {
+      //  icon_url: bot.user.avatarURL,
+      //  text: "© - REAK BOT"
+      //  }
+     // }});
 
 
 });
@@ -680,4 +680,4 @@ bot.on('guildMemberAdd', member => {
         }});
    });
 
-bot.login("529005584414932992")
+bot.login('NTI5MDA1NTg0NDE0OTMyOTky.DzpCKw.KOJLTKH48dX1XmDtAYUWkLVWY1o')
