@@ -63,14 +63,18 @@ bot.on("message", function(message) {
           }});
             
             message.channel.send("(*Il reste environ 24 heures avant la fin du sondage.*)")
-            message.react("✅"); 
-            message.react("⛔"); 
+           
             
         function setDate(){
+             
             var now = new Date();
             dayafter=lauch
             var restant= (now.getTime() - dayafter.getTime())/1000;
             console.log(restant)
+            if (restant>(2) && restant<3) {
+                message.react("✅"); 
+                message.react("⛔"); }
+                
             if (restant>(10) && restant<11) {
                 console.log("YES 59 MINS");
                 bot.user.lastMessage.edit("(*Il reste environ 23 heures avant la fin du sondage.*)") }
@@ -96,7 +100,7 @@ bot.on("message", function(message) {
 
 
             if (stop==0){
-            setTimeout(setDate, 1000) }
+                setTimeout(setDate, 1000) }
     }}
 
     if(message.content.startsWith ("INSCRIPTION DE L'EQUIPE :")) {
