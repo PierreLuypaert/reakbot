@@ -28,7 +28,7 @@ bot.on("message", function(message) {
         sondage=""
         a=9
         stop=0
-        message.delete(1000);
+        message.delete(100);
         do{
             sondage=sondage+sond[a]
             a=a+1
