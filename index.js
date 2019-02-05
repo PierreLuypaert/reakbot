@@ -67,7 +67,7 @@ bot.on("message", function(message) {
              message.react("✅")
              message.react("⛔")
             });
-            heure=[25,0,01]
+            heure=[25,0,1]
         function setDate(){
             heure[2]=heure[2]-1
             if (heure[2]==-1){
@@ -78,8 +78,7 @@ bot.on("message", function(message) {
                 } else {
                  heure[1]=heure[1]-1
                 }
-                
-                heure[1]=heure[-1}
+               
             }
             var now = new Date();
             dayafter=lauch
