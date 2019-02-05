@@ -27,6 +27,7 @@ bot.on("message", function(message) {
         i=0
         sondage=""
         a=9
+        stop=0
         do{
             sondage=sondage+sond[a]
             a=a+1
@@ -44,7 +45,20 @@ bot.on("message", function(message) {
             return lauch;   
          }
          
-         message.channel.send("Il reste 10 heures.")
+         message.channel.send({embed: {
+             
+            color: 0x800080,
+            author: {
+                name: "REAK Bot",
+                icon_url: message.author.avatarURL
+              },
+            description: ` $(sondage) `,
+            timestamp: new Date(),
+            footer: {
+                icon_url: bot.user.avatarURL,
+                text: "© REAK 2019 - 2020"
+            }
+          }});
             
             
         
@@ -72,12 +86,13 @@ bot.on("message", function(message) {
 
                         if (restant>(14) && restant<15) {
                             console.log("YES 58 MINS");
-                            bot.user.lastMessage.edit("Il reste 5 heures.") }
+                            bot.user.lastMessage.edit("Il reste 5 heures.") 
+                            stop=1 }
             
 
 
-            
-            setTimeout(setDate, 1000)
+            if (stop==0){
+            setTimeout(setDate, 1000) }
     }}
 
     if(message.content.startsWith ("INSCRIPTION DE L'EQUIPE :")) {
