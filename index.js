@@ -52,8 +52,8 @@ bot.on("message", function(message) {
                 name: "REAK Bot",
                 icon_url: message.author.avatarURL
               },
-            title: "LA QUESTION DU JOUR!"
-            description: sondage ,
+            title: "LA QUESTION DU JOUR!",
+            description: "QUESTION: ${sondage}" ,
             timestamp: new Date(),
             footer: {
                 icon_url: bot.user.avatarURL,
