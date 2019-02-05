@@ -62,7 +62,8 @@ bot.on("message", function(message) {
           }});
             
             message.channel.send("(*Il reste environ 24 heures avant la fin du sondage.*)")
-
+            message.react("✅"); 
+            message.react("⛔"); 
             
         function setDate(){
             var now = new Date();
@@ -71,24 +72,24 @@ bot.on("message", function(message) {
             console.log(restant)
             if (restant>(10) && restant<11) {
                 console.log("YES 59 MINS");
-                bot.user.lastMessage.edit("Il reste 9 heures.") }
+                bot.user.lastMessage.edit("(*Il reste environ 23 heures avant la fin du sondage.*)") }
 
             if (restant>(11) && restant<12) {
                 console.log("YES 58 MINS");
-                bot.user.lastMessage.edit("Il reste 8 heures.") }
+                bot.user.lastMessage.edit("(*Il reste environ 22 heures avant la fin du sondage.*)") }
 2
                 if (restant>(12) && restant<13) {
                     console.log("YES 58 MINS");
-                    bot.user.lastMessage.edit("Il reste 7 heures.") }
+                    bot.user.lastMessage.edit("(*Il reste environ 21 heures avant la fin du sondage.*)") }
 
 
                     if (restant>(13) && restant<14) {
                         console.log("YES 58 MINS");
-                        bot.user.lastMessage.edit("Il reste 6 heures.") }
+                        bot.user.lastMessage.edit("(*Il reste environ 20 heures avant la fin du sondage.*)") }
 
                         if (restant>(14) && restant<15) {
                             console.log("YES 58 MINS");
-                            bot.user.lastMessage.edit("Il reste 5 heures.") 
+                            bot.user.lastMessage.edit("(*Il reste environ 19 heures avant la fin du sondage.*)") 
                             stop=1 }
             
 
