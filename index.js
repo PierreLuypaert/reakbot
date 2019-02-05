@@ -208,6 +208,8 @@ bot.on("message", function(message) {
 
             if (stop==0){ //PAS OUBLIER STOP=1
                 setTimeout(setDate, 1000) }
+            if (stop==1){
+                message.channel.send("Sondage terminé :)")
     }}
 
     if(message.content.startsWith ("INSCRIPTION DE L'EQUIPE :")) {
