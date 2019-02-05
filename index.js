@@ -53,7 +53,7 @@ bot.on("message", function(message) {
                 icon_url: message.author.avatarURL
               },
             title: "LA QUESTION DU JOUR!",
-            description: "QUESTION: ${sondage}" ,
+            description: sondage ,
             timestamp: new Date(),
             footer: {
                 icon_url: bot.user.avatarURL,
