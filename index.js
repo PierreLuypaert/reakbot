@@ -37,7 +37,7 @@ bot.on("message", function(message) {
                 console.log("on passe")
             }
         } while (i==0);
-        message.channel.send(sondage)
+        message.delete()
         lauch = new Date ();
         go=setDate();
         Date.prototype.addHours = function addhour() {    
