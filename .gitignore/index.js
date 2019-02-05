@@ -3,7 +3,6 @@ const Discord = require("discord.js");
 var bot = new Discord.Client();
 var couleur = 1
 bot.on('ready', () => {
-    bot.user.setGame('Par Sneawy');
     bot.channels.get("528998224380559402").send({embed: {
         color: 0x800080,
         author: {
