@@ -3,7 +3,7 @@ const Discord = require("discord.js");
 var bot = new Discord.Client();
 var couleur = 1
 bot.on('ready', () => {
-    console.log("Je suis prêt!");
+    bot.user.setGame('Par Sneawy");
    // bot.channels.get("528998224380559402").send({embed: {
    //     color: 0x800080,
     //    author: {
@@ -19,7 +19,7 @@ bot.on('ready', () => {
      // }});
 
 
-});
+)};
 bot.on("message", function(message) {
     if(message.content.startsWith ("!sondage ")) {
         sond=message.content
