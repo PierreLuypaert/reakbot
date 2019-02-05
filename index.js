@@ -63,17 +63,18 @@ bot.on("message", function(message) {
           }});
             
             message.channel.send("(*Il reste environ 24 heures avant la fin du sondage.*)")
-           
-            
+            setTimeout(React, 2000)
+        function React(){
+            message.react("✅"); 
+            message.react("⛔");
+        }
         function setDate(){
              
             var now = new Date();
             dayafter=lauch
             var restant= (now.getTime() - dayafter.getTime())/1000;
             console.log(restant)
-            if (restant>(2) && restant<3) {
-                message.react("✅"); 
-                message.react("⛔"); }
+                
                 
             if (restant>(10) && restant<11) {
                 console.log("YES 59 MINS");
