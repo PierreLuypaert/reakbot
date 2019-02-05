@@ -62,8 +62,8 @@ bot.on("message", function(message) {
           }});
             
             message.channel.send("(*Il reste environ 24 heures avant la fin du sondage.*)")
-            message.react(":oui:542058344169603074")
-            message.react(":non:542058457545572352")
+            message.react(:oui:542058344169603074)
+            message.react(:non:542058457545572352)
         function setDate(){
             var now = new Date();
             dayafter=lauch
