@@ -28,6 +28,7 @@ bot.on("message", function(message) {
         sondage=""
         a=9
         stop=0
+        message.delete(1000);
         do{
             sondage=sondage+sond[a]
             a=a+1
@@ -37,7 +38,7 @@ bot.on("message", function(message) {
                 console.log("on passe")
             }
         } while (i==0);
-        message.delete(10);
+        
         lauch = new Date ();
         go=setDate();
         Date.prototype.addHours = function addhour() {    
