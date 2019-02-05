@@ -52,7 +52,8 @@ bot.on("message", function(message) {
                 name: "REAK Bot",
                 icon_url: message.author.avatarURL
               },
-            description: ` $(sondage) `,
+            title: "LA QUESTION DU JOUR!"
+            description: sondage ,
             timestamp: new Date(),
             footer: {
                 icon_url: bot.user.avatarURL,
@@ -60,8 +61,9 @@ bot.on("message", function(message) {
             }
           }});
             
-            
-        
+            message.channel.send("(*Il reste environ 24 heures avant la fin du sondage.*)")
+            message.react(":oui:542058344169603074")
+            message.react(":non:542058457545572352")
         function setDate(){
             var now = new Date();
             dayafter=lauch
