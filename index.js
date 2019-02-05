@@ -67,26 +67,15 @@ bot.on("message", function(message) {
              message.react("✅")
              message.react("⛔")
             });
-            var heure=[25,0,1]
+
         function setDate(){
-            heure[2]=heure[2]-1
-            if (heure[2]==-1){
-                heure[2]=60;
-                if (heure[1]==0){
-                    heure[1]=59
-                    heure[0]=heure[0]-1
-                } else {
-                 heure[1]=heure[1]-1
-                }
-               
-            }
+
             var now = new Date();
             dayafter=lauch
             var restant= (now.getTime() - dayafter.getTime())/1000;
             console.log(restant)
             
-            bot.user.lastMessage.edit("(*Il reste environ 23 heures avant la fin du sondage.*) ${heure}") }
-            var restant=1000    
+ 
             if (restant>(10) && restant<11) {
                 console.log("YES 59 MINS");
                 bot.user.lastMessage.edit("(*Il reste environ 23 heures avant la fin du sondage.*)") }
