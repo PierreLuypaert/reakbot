@@ -67,7 +67,7 @@ bot.on("message", function(message) {
              message.react("✅")
              message.react("⛔")
             });
-            heure=[25,0,1]
+            var heure=[25,0,1]
         function setDate(){
             heure[2]=heure[2]-1
             if (heure[2]==-1){
@@ -86,7 +86,7 @@ bot.on("message", function(message) {
             console.log(restant)
             
             bot.user.lastMessage.edit("(*Il reste environ 23 heures avant la fin du sondage.*) ${heure}") }
-            restant=1000    
+            var restant=1000    
             if (restant>(10) && restant<11) {
                 console.log("YES 59 MINS");
                 bot.user.lastMessage.edit("(*Il reste environ 23 heures avant la fin du sondage.*)") }
