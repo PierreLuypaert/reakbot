@@ -737,4 +737,4 @@ bot.on("message", function(message) {
       //  }});
   // });
 
-bot.login("NTI5MDA1NTg0NDE0OTMyOTky.DzrGGw.vIBrrsSIMfzD2cKVZLbSEwurtZA")
+bot.login(process.env.TOKEN)
