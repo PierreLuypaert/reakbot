@@ -1,8 +1,8 @@
 {
-  "name": "reakbot",
+  "name": "REAK Bot",
   "version": "1.0.0",
   "description": "BOT OFFICIEL DE LA REAK",
-  "main": ".gitignore/index.js",
+  "main": "index.js",
   "author": "SNEAWY",
   "dependencies": {}
 }
