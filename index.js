@@ -63,11 +63,11 @@ bot.on("message", function(message) {
           }});
             
             message.channel.send("(*Il reste environ 24 heures avant la fin du sondage.*)")
-            setTimeout(React, 2000)
-        function React(){
-            message.react("✅"); 
-            message.react("⛔");
-        }
+            .then(function (message) {
+             message.react("✅")
+             message.react("⛔")
+            });
+
         function setDate(){
              
             var now = new Date();
