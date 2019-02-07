@@ -76,9 +76,9 @@ bot.on("message", function(message) {
             console.log(restant)
             
  
-            if (restant>(3600) && restant<3602) {
+            if (restant>(5) && restant<7) {
                 console.log("YES 59 MINS");
-                bot.user.lastMessage.edit("(*Il reste environ 23 heures avant la fin du sondage.*)") }
+                bot.channels.get("528998224380559402").lastMessage.edit("(*Il reste environ 23 heures avant la fin du sondage.*)") }
 
             if (restant>(7200) && restant<7202) {
                 console.log("YES 58 MINS");
