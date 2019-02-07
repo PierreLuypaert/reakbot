@@ -62,7 +62,7 @@ bot.on("message", function(message) {
             }
           }});
             
-            message.channel.send("(*Il reste 1 jour avant la fin du sondage.*)")
+            message.channel.send("(*Il reste moins de 24 heures avant la fin du sondage.*)")
             .then(function (message) {
              message.react("✅")
              message.react("⛔")
@@ -76,130 +76,130 @@ bot.on("message", function(message) {
             console.log(restant)
             
  
-            if (restant>(5) && restant<7) {
+            if (restant>(3600) && restant<3602) {
                 console.log("YES 59 MINS");
                 bot.channels.get("528998224380559402").lastMessage.edit("(*Il reste environ 23 heures avant la fin du sondage.*)") }
 
             if (restant>(7200) && restant<7202) {
                 console.log("YES 58 MINS");
-                bot.user.lastMessage.edit("(*Il reste environ 22 heures avant la fin du sondage.*)") }
+                bot.channels.get("528998224380559402").lastMessage.edit("(*Il reste environ 22 heures avant la fin du sondage.*)") }
 2
                 if (restant>(10800) && restant<18002) {
                     console.log("YES 58 MINS");
-                    bot.user.lastMessage.edit("(*Il reste environ 21 heures avant la fin du sondage.*)") }
+                    bot.channels.get("528998224380559402").lastMessage.edit("(*Il reste environ 21 heures avant la fin du sondage.*)") }
 
 
                     if (restant>(3600*4) && restant<((3600*4)+2)) {
                         console.log("YES 58 MINS");
-                        bot.user.lastMessage.edit("(*Il reste environ 20 heures avant la fin du sondage.*)") }
+                        bot.channels.get("528998224380559402").lastMessage.edit("(*Il reste environ 20 heures avant la fin du sondage.*)") }
 
                         if (restant>(3600*5) && restant<((3600*5)+2)) {
                             console.log("YES 58 MINS");
-                            bot.user.lastMessage.edit("(*Il reste environ 19 heures avant la fin du sondage.*)") 
+                            bot.channels.get("528998224380559402").lastMessage.edit("(*Il reste environ 19 heures avant la fin du sondage.*)") 
                              }
             if (restant>(3600*6) && restant<((3600*6)+2)) {
                             console.log("YES 58 MINS");
-                            bot.user.lastMessage.edit("(*Il reste environ 18 heures avant la fin du sondage.*)") 
+                            bot.channels.get("528998224380559402").lastMessage.edit("(*Il reste environ 18 heures avant la fin du sondage.*)") 
                              }
             if (restant>(3600*7) && restant<((3600*7)+2)) {
                             console.log("YES 58 MINS");
-                            bot.user.lastMessage.edit("(*Il reste environ 17 heures avant la fin du sondage.*)") 
+                            bot.channels.get("528998224380559402").lastMessage.edit("(*Il reste environ 17 heures avant la fin du sondage.*)") 
                              }
             if (restant>(3600*8) && restant<((3600*8)+2)) {
                             console.log("YES 58 MINS");
-                            bot.user.lastMessage.edit("(*Il reste environ 16 heures avant la fin du sondage.*)") 
+                            bot.channels.get("528998224380559402").lastMessage.edit("(*Il reste environ 16 heures avant la fin du sondage.*)") 
                              }
             if (restant>(3600*9) && restant<((3600*9)+2)) {
                             console.log("YES 58 MINS");
-                            bot.user.lastMessage.edit("(*Il reste environ 15 heures avant la fin du sondage.*)") 
+                            bot.channels.get("528998224380559402").lastMessage.edit("(*Il reste environ 15 heures avant la fin du sondage.*)") 
                              }
             if (restant>(3600*10) && restant<((3600*10)+2)) {
                             console.log("YES 58 MINS");
-                            bot.user.lastMessage.edit("(*Il reste environ 14 heures avant la fin du sondage.*)") 
+                            bot.channels.get("528998224380559402").lastMessage.edit("(*Il reste environ 14 heures avant la fin du sondage.*)") 
                              }
             if (restant>(3600*11) && restant<((3600*11)+2)) {
                             console.log("YES 58 MINS");
-                            bot.user.lastMessage.edit("(*Il reste environ 13 heures avant la fin du sondage.*)") 
+                            bot.channels.get("528998224380559402").lastMessage.edit("(*Il reste environ 13 heures avant la fin du sondage.*)") 
                              }
             if (restant>(3600*12) && restant<((3600*12)+2)) {
                             console.log("YES 58 MINS");
-                            bot.user.lastMessage.edit("(*Il reste environ 12 heures avant la fin du sondage.*)") 
+                            bot.channels.get("528998224380559402").lastMessage.edit("(*Il reste environ 12 heures avant la fin du sondage.*)") 
                              }
             if (restant>(3600*13) && restant<((3600*13)+2)) {
                             console.log("YES 58 MINS");
-                            bot.user.lastMessage.edit("(*Il reste environ 11 heures avant la fin du sondage.*)") 
+                            bot.channels.get("528998224380559402").lastMessage.edit("(*Il reste environ 11 heures avant la fin du sondage.*)") 
                              }
             if (restant>(3600*14) && restant<((3600*14)+2)) {
                             console.log("YES 58 MINS");
-                            bot.user.lastMessage.edit("(*Il reste environ 10 heures avant la fin du sondage.*)") 
+                            bot.channels.get("528998224380559402").lastMessage.edit("(*Il reste environ 10 heures avant la fin du sondage.*)") 
                              }
             if (restant>(3600*15) && restant<((3600*15)+2)) {
                             console.log("YES 58 MINS");
-                            bot.user.lastMessage.edit("(*Il reste environ 9 heures avant la fin du sondage.*)") 
+                            bot.channels.get("528998224380559402").lastMessage.edit("(*Il reste environ 9 heures avant la fin du sondage.*)") 
                              }
             if (restant>(3600*16) && restant<((3600*16)+2)) {
                             console.log("YES 58 MINS");
-                            bot.user.lastMessage.edit("(*Il reste environ 8 heures avant la fin du sondage.*)") 
+                            bot.channels.get("528998224380559402").lastMessage.edit("(*Il reste environ 8 heures avant la fin du sondage.*)") 
                              }
             if (restant>(3600*17) && restant<((3600*17)+2)) {
                             console.log("YES 58 MINS");
-                            bot.user.lastMessage.edit("(*Il reste environ 7 heures avant la fin du sondage.*)") 
+                            bot.channels.get("528998224380559402").lastMessage.edit("(*Il reste environ 7 heures avant la fin du sondage.*)") 
                              }
             if (restant>(3600*18) && restant<((3600*18)+2)) {
                             console.log("YES 58 MINS");
-                            bot.user.lastMessage.edit("(*Il reste environ 6 heures avant la fin du sondage.*)") 
+                            bot.channels.get("528998224380559402").lastMessage.edit("(*Il reste environ 6 heures avant la fin du sondage.*)") 
                              }
             if (restant>(3600*19) && restant<((3600*19)+2)) {
                             console.log("YES 58 MINS");
-                            bot.user.lastMessage.edit("(*Il reste environ 5 heures avant la fin du sondage.*)") 
+                            bot.channels.get("528998224380559402").lastMessage.edit("(*Il reste environ 5 heures avant la fin du sondage.*)") 
                              }
             if (restant>(3600*20) && restant<((3600*20)+2)) {
                             console.log("YES 58 MINS");
-                            bot.user.lastMessage.edit("(*Il reste environ 4 heures avant la fin du sondage.*)") 
+                            bot.channels.get("528998224380559402").lastMessage.edit("(*Il reste environ 4 heures avant la fin du sondage.*)") 
                              }
             if (restant>(3600*21) && restant<((3600*21)+2)) {
                             console.log("YES 58 MINS");
-                            bot.user.lastMessage.edit("(*Il reste environ 3 heures avant la fin du sondage.*)") 
+                            bot.channels.get("528998224380559402").lastMessage.edit("(*Il reste environ 3 heures avant la fin du sondage.*)") 
                              }
             if (restant>(3600*22) && restant<((3600*22)+2)) {
                             console.log("YES 58 MINS");
-                            bot.user.lastMessage.edit("(*Il reste environ 2 heures avant la fin du sondage.*)") 
+                            bot.channels.get("528998224380559402").lastMessage.edit("(*Il reste environ 2 heures avant la fin du sondage.*)") 
                              }
             if (restant>(3600*23) && restant<((3600*23)+2)) {
                             console.log("YES 58 MINS");
-                            bot.user.lastMessage.edit("(*Il reste environ 1 heure avant la fin du sondage.*)") 
+                            bot.channels.get("528998224380559402").lastMessage.edit("(*Il reste environ 1 heure avant la fin du sondage.*)") 
                              }
             if (restant>(3600*23+1800) && restant<((3600*23)+1802)) {
                             console.log("YES 58 MINS");
-                            bot.user.lastMessage.edit("(*Il reste environ 30minutes avant la fin du sondage.*)") 
+                            bot.channels.get("528998224380559402").lastMessage.edit("(*Il reste environ 30minutes avant la fin du sondage.*)") 
                              }
             if (restant>(3600*23+1800+1200) && restant<((3600*23)+1802+1200)) {
                             console.log("YES 58 MINS");
-                            bot.user.lastMessage.edit("(*Il reste environ 10minutes avant la fin du sondage.*)") 
+                            bot.channels.get("528998224380559402").lastMessage.edit("(*Il reste environ 10minutes avant la fin du sondage.*)") 
                              }
             if (restant>(3600*23+1800+1200+300) && restant<((3600*23)+1802+1200+300)) {
                             console.log("YES 58 MINS");
-                            bot.user.lastMessage.edit("(*Il reste environ 5minutes avant la fin du sondage.*)") 
+                            bot.channels.get("528998224380559402").lastMessage.edit("(*Il reste environ 5minutes avant la fin du sondage.*)") 
                              }
              if (restant>(3600*23+1800+1200+300+180) && restant<((3600*23)+1802+1200+300+180)) {
                             console.log("YES 58 MINS");
-                            bot.user.lastMessage.edit("(*Il reste environ 2minutes avant la fin du sondage.*)") 
+                            bot.channels.get("528998224380559402").lastMessage.edit("(*Il reste environ 2minutes avant la fin du sondage.*)") 
                              }
             if (restant>(3600*23+1800+1200+300+180+60) && restant<((3600*23)+1802+1200+300+180+60)) {
                             console.log("YES 58 MINS");
-                            bot.user.lastMessage.edit("(*Il reste environ 1minute avant la fin du sondage.*)") 
+                            bot.channels.get("528998224380559402").lastMessage.edit("(*Il reste environ 1minute avant la fin du sondage.*)") 
                              }
             if (restant>(3600*23+1800+1200+300+180+60+30) && restant<((3600*23)+1802+1200+300+180+60+30)) {
                             console.log("YES 58 MINS");
-                            bot.user.lastMessage.edit("(*Il reste environ 30 secondes avant la fin du sondage.*)") 
+                            bot.channels.get("528998224380559402").lastMessage.edit("(*Il reste environ 30 secondes avant la fin du sondage.*)") 
                              }
             if (restant>(3600*23+1800+1200+300+180+60+30+20) && restant<((3600*23)+1802+1200+300+180+60+30+20)) {
                             console.log("YES 58 MINS");
-                            bot.user.lastMessage.edit("(*Il reste moins de 10 secondes avant la fin du sondage.*)") 
+                            bot.channels.get("528998224380559402").lastMessage.edit("(*Il reste moins de 10 secondes avant la fin du sondage.*)") 
                              }
             if (restant>(3600*23+1800+1200+300+180+60+30+20+10) && restant<((3600*23)+1802+1200+300+180+60+30+20+10)) {
                             console.log("YES 58 MINS");
-                            bot.user.lastMessage.edit("(*Le sondage est terminé.*)");
+                            bot.channels.get("528998224380559402").lastMessage.edit("(*Le sondage est terminé.*)");
                             stop=1
                              }
             
