@@ -61,10 +61,7 @@ bot.on("message", function(message) {
                 text: "© REAK 2019 - 2020"
             }
           }});
-            .then(function (message) {
-             message.react("✅")
-             message.react("⛔")
-            });
+            
             
 
 
