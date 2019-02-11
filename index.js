@@ -42,7 +42,7 @@ bot.on("message", function(message) {
         
         user = message.guild.members.find("name", "Sondages");
 
-        message.channel.send(`Mention : <@&506075917504872449>`);
+        message.channel.send(`**Mention : <@&506075917504872449>**`);
         function getRandomInt(max) {
             return Math.floor(Math.random() * Math.floor(max));
           }
