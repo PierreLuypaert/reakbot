@@ -52,7 +52,7 @@ bot.on("message", function(message) {
         const embed = new Discord.RichEmbed()
         .setAuthor("REAK BOT", "https://i.imgur.com/mfvoPjv.png")
         .setColor(0x800080)
-        .setDescription("**➡" + sondage + "⬅ \n Réagissez avec ✅ ou ⛔!**")
+        .setDescription("**➡ " + sondage + " ⬅ \n Réagissez avec ✅ ou ⛔!**")
         .setFooter("REAK BOT - ")
         .setImage(imagef)
         .setTimestamp()
