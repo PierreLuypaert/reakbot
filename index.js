@@ -68,7 +68,7 @@ bot.on("message", function(message) {
             
 
 
-    }
+    }}
 
     if(message.content.startsWith ("INSCRIPTION DE L'EQUIPE :")) {
         inscription=message.content
