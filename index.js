@@ -23,6 +23,7 @@ bot.on('ready', () => {
 });
 bot.on("message", function(message) {
     if(message.content.startsWith ("!sondage ")) {
+        if(message.member.roles.find("name", "🌀 ADMINISTRATEURS 🌀")){
         sond=message.content
         i=0
         sondage=""
@@ -39,33 +40,38 @@ bot.on("message", function(message) {
             }
         } while (i==0);
         
-        lauch = new Date ();
-        go=setDate();
-        Date.prototype.addHours = function addhour() {    
-            lauch.setTime(lauch.getTime() + (24*60*60*1000)); 
-            return lauch;   
-         }
-         
-         message.channel.send({embed: {
-             
-            color: 0x800080,
-            author: {
-                name: "REAK Bot",
-                icon_url: message.author.avatarURL
-              },
-            title: "LA QUESTION DU JOUR!",
-            description: sondage ,
-            timestamp: new Date(),
-            footer: {
-                icon_url: bot.user.avatarURL,
-                text: "© REAK 2019 - 2020"
-            }
-          }});
+        user = message.guild.members.find("name", "Sondages");
+
+        message.channel.send(`Mention : <@&506075917504872449>`);
+        function getRandomInt(max) {
+            return Math.floor(Math.random() * Math.floor(max));
+          }
+        resuab=getRandomInt(5);
+        listeimage=["https://wallpapershome.com/images/pages/pic_h/19924.jpg","https://hdwallpapersmafia.com/wp-content/uploads/2018/11/hollowhead-fortnite-battle-royale-4k-pl-3840x2160.jpg","https://hdwallpapersmafia.com/wp-content/uploads/2018/09/Fortnite-4K-Wallpaper-Screenshot2.jpg","https://media.xboxlive.fr/galeries/2923/065.jpg","https://a-static.besthdwallpaper.com/arbres-shifty-maison-4k-fortnite-fond-d-ecran-1220_L.jpg"]
+        imagef=listeimage[resuab]
+        const embed = new Discord.RichEmbed()
+        .setAuthor("REAK BOT", "https://i.imgur.com/mfvoPjv.png")
+        .setColor(0x800080)
+        .setDescription("**" + sondage + "\n Réagissez avec ✅ ou ⛔!**")
+        .setFooter("REAK BOT - ")
+        .setImage(imagef)
+        .setTimestamp()
+        message.channel.send({embed}) 
+          .then(function (message) {
+            message.react("⛔")
+            message.react("✅")
+
+          });
+          
             
             
 
 
-    )}};
+    } else{
+        message.reply("**Vous n'êtes pas autorisé à utiliser cette commande. **")
+    }
+
+}
 
     if(message.content.startsWith ("INSCRIPTION DE L'EQUIPE :")) {
         inscription=message.content
