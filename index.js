@@ -25,23 +25,7 @@ bot.on("message", function(message) {
     if(message.content.startsWith("!ping")) {
         temps = (new Date().getTime() - message.createdTimestamp)
             message.channel.send(temps + " ms");
-        temps = parseInt(temps)
-        if (temps <=20){
-                message.channel.send("**Très bonne connection!**");
-            }
-            if ((temps >20) and (temps <=50)){
-                message.channel.send("**Bonne connection.**");
-            }
-            if ((temps >50) and (temps <=80)){
-                message.channel.send("**Connection moyenne.**");
-            }
-               if ((temps >80) and (temps <=100)){
-                message.channel.send("**Faible connection.**");
-            }
-            if (temps >100){
-                message.channel.send("**État critique**");
-            }
-            
+        
     }
     
     if(message.content.startsWith ("!sondage ")) {
