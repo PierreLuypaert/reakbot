@@ -23,7 +23,9 @@ bot.on('ready', () => {
 });
 bot.on("message", function(message) {
     if(message.content.startsWith("!ping")) {
-        
+        temps = (new Date().getTime() - message.createdTimestamp)
+            message.channel.send(temps + " ms");
+            
     }
     
     if(message.content.startsWith ("!sondage ")) {
