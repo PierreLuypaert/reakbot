@@ -23,7 +23,7 @@ bot.on('ready', () => {
 });
 bot.on("message", function(message) {
     if(message.content.startsWith("!ping")) {
-            message.channel.send(new Date().getTime() - message.createdTimestamp + " ms");        
+            message.channel.send("Vous avez **" + new Date().getTime() - message.createdTimestamp + "** ms");        
     }
     
     if(message.content.startsWith ("!sondage ")) {
