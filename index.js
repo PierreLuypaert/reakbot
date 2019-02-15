@@ -25,6 +25,7 @@ bot.on("message", function(message) {
     if(message.content.startsWith("!ping")) {
         temps = (new Date().getTime() - message.createdTimestamp)
             message.channel.send(temps + " ms");
+        temps = parseInt(temps)
         if (temps <=20){
                 message.channel.send("**Très bonne connection!**");
             }
