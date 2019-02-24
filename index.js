@@ -378,7 +378,10 @@ bot.on("message", function(message) {
 
             
         }
-
+        else {
+            message.channel.send("Vous n'êtes pas autorisé à utiliser cette commande.")
+        }
+        
     }
 
 
