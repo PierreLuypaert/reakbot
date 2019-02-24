@@ -365,8 +365,7 @@ bot.on("message", function(message) {
                         name: "REAK Bot",
                         icon_url: message.author.avatarURL
                       },
-                    title: "ATTENTE POUR SCRIM !",
-                    description: `:warning: Il nous faut des joueurs pour jouer en **scrim** maintenant ! On est en vocal. :warning: `,
+                    description: `:warning: Il nous faut des joueurs pour jouer en **SCRIM** maintenant !. :warning: `,
                     timestamp: new Date(),
                     footer: {
                         icon_url: bot.user.avatarURL,
