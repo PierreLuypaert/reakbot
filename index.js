@@ -19,10 +19,10 @@ bot.on('ready', () => {
         }
       }});
 
-client.on('messageReactionAdd', (reaction, user) => {
+bot.on('messageReactionAdd', (reaction, user) => {
     if(reaction.emoji.name === "✅") {
         if (message.channel.id === "451661082642219011") {
-        message.channel.send(reaction.user);
+        message.channel.send(reaction.users);
     }}
 });
     
