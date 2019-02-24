@@ -19,7 +19,14 @@ bot.on('ready', () => {
         }
       }});
 
-
+client.on('messageReactionAdd', (reaction, user) => {
+    if(reaction.emoji.name === "✅") {
+        if (message.channel.id === "451661082642219011") {
+        message.channel.send(reaction.users);
+    }}
+});
+    
+    
 });
 bot.on("message", function(message) {
     if(message.content.startsWith("!ping")) {
