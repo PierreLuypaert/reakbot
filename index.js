@@ -348,7 +348,7 @@ bot.on("message", function(message) {
 
 
     if(message.content.startsWith ("!start")) {
-        if(message.member.roles.find("name", "🔥 REAK - Première équipe 🔥") OR message.member.roles.find("name", "💦REAK - Deuxième équipe 💦")){
+        if((message.member.roles.find("name", "🔥 REAK - Première équipe 🔥")) || (message.member.roles.find("name", "💦REAK - Deuxième équipe 💦"))) {
             listejoueur=["313755754450386946","239105965679443968","203943345230184448","146359634972770304","227929826642624522","453234856835416066","331029959722401792","396419951436759040"]
             conditiliste=0
             comptliste=0
@@ -770,5 +770,8 @@ bot.on('guildMemberAdd', member => {
         }
         }});
    });
+
+
+
 
 bot.login(process.env.TOKEN)
