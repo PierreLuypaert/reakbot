@@ -19,12 +19,6 @@ bot.on('ready', () => {
         }
       }});
 
-bot.on('messageReactionAdd', (reaction, user) => {
-    if(reaction.emoji.name === "✅") {
-        if (message.channel.id === "451661082642219011") {
-        message.channel.send(reaction.users);
-    }}
-});
     
     
 });
@@ -353,7 +347,40 @@ bot.on("message", function(message) {
 
 
 
+    if(message.content.startsWith ("!start")) {
+        if(message.member.roles.find("name", "🔥 REAK - Première équipe 🔥") OR message.member.roles.find("name", "💦REAK - Deuxième équipe 💦")){
+            listejoueur=["313755754450386946","239105965679443968","203943345230184448","146359634972770304","227929826642624522","453234856835416066","331029959722401792","396419951436759040"]
+            conditiliste=0
+            comptliste=0
+            // SNEAWY - DEUCALIUS - ELMUY - ARYWIN - FRAYCHEUR - NABE - LUK - TOHKA 
+            do{
+                msgaenvoyer=listejoueur[comptliste]
+                  bot.fetchUser(msgaenvoyer).then((user) => {
+                user.send({embed: {
+                    color: 0x00FFFF,
+                    author: {
+                        name: "REAK Bot",
+                        icon_url: message.author.avatarURL
+                      },
+                    title: "ATTENTE POUR SCRIM",
+                    description: `:warning: Ceci est un message de test. :warning: `,
+                    timestamp: new Date(),
+                    footer: {
+                        icon_url: bot.user.avatarURL,
+                        text: "© REAK 2019 - 2020"
+                    }
+                  }});
+            });
+                if (comptliste==((listejoueur).length-1)){
+                    condiliste=1
+                }
+                comptliste=comptliste+1
+                
+            }while (condiliste=0);
+            
+        }
 
+    }
 
 
 
